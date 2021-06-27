@@ -1,0 +1,10 @@
+sourceCompatibility = 1.7
+dependencies {
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+eclipse.project.name = appName + "-core"
